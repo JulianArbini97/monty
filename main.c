@@ -58,5 +58,3 @@ int main(int argc, char **argv)
     f_list(vari.mystack);
     return(0);
 }
-
-

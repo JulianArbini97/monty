@@ -1,9 +1,6 @@
-push 0
-push 2
-push 2
-  push 3
-                   pall    
-push r
-    push 5    
-      push    6        
+push 1
+pall
+push 5343
+push 21
+push 34r3
 pall

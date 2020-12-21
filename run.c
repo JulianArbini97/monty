@@ -18,7 +18,7 @@ var_1 vari;
          {"swap", swap},
          {NULL, NULL},
      };
-     for (j = 0; j < 7; j++)
+     for (j = 0; j < 6; j++)
      {
          if(strcmp(funcs[j].opcode, refer[0]) == 0)
          {
