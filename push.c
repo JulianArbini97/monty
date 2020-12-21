@@ -5,7 +5,7 @@ void push(stack_t **stack, unsigned int line_number)
 {
     stack_t *new;
     char *num = vari.num;
-
+    unsigned int j = 0;
 
     (void) line_number;
     new = malloc(sizeof(stack_t));
@@ -17,7 +17,9 @@ void push(stack_t **stack, unsigned int line_number)
         exit(EXIT_FAILURE);
     }
 
-    if (*num >= 48 && *num <= 57)
+    for (j = 0; j < strlen(vari.num); j++)
+    {
+    if (num[j] >= 48 && num[j] <= 57)
     {
     new->n = atoi(num);
     new->next = (*stack);
@@ -28,7 +30,9 @@ void push(stack_t **stack, unsigned int line_number)
 	    fprintf(stderr,"L%d: usage: push integer\n", vari.line_number);
 	    fclose(vari.fil);
 	    f_list(vari.mystack);
+	    free(new);
 	    exit(EXIT_FAILURE);
+    }
     }
     (*stack) = new;
     if ((*stack) != NULL)
