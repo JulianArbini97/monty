@@ -1,13 +1,13 @@
 #ifndef MONTY_H
 #define MONTY_H
-#include <stdio.h>
+
 #include <stdlib.h>
-#include <sys/stat.h>
+#include <stdio.h>
 #include <string.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <fcntl.h>
-extern int number;
+#include <ctype.h>
+#include <limits.h>
+#include <sys/stat.h>
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -19,10 +19,10 @@ extern int number;
  */
 typedef struct stack_s
 {
-  int n;
-  struct stack_s *prev;
-  struct stack_s *next;
-} stack_s;
+        int n;
+        struct stack_s *prev;
+        struct stack_s *next;
+} stack_t;
 
 /**
  * struct instruction_s - opcode and its function
@@ -32,14 +32,32 @@ typedef struct stack_s
  * Description: opcode and its function
  * for stack, queues, LIFO, FIFO Holberton project
  */
-
 typedef struct instruction_s
 {
-  char *opcode;
-  void (*f)(stack_s **stack, unsigned int line_number);
+        char *opcode;
+        void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-int search_opcode(char *, unsigned int, stack_s **, int);
-void f_push(stack_s **stack, unsigned int line_number);
-void f_pall(stack_s **stack, unsigned int line_number);
-#endif
+typedef struct global
+{
+	FILE *fil;
+	unsigned int line_number;
+	char *num;
+	int queue_ask;
+	stack_t *mystack;
+} var_1;
+
+extern var_1 vari;
+
+void pall(stack_t **stack, unsigned int line_number);
+void push(stack_t **stack, unsigned int line_number);
+void pint(stack_t **stack, unsigned int line_number);
+void hello( __attribute__((unused))stack_t **stack, __attribute__((unused))unsigned int line_number);
+void run(char (*refer)[100]);
+void f_list(stack_t *mystack);
+void nop(stack_t **stack, unsigned int line_number);
+void pop(stack_t **stack, unsigned int line_number);
+void swap(stack_t **stack, unsigned int line_number);
+
+
+#endif   
