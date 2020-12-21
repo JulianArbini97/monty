@@ -1,10 +1,9 @@
-push 0 Push 0 onto the stack
-push 1 Push 1 onto the stack
-push 2334
- push 3
-pall 456
-push 4
-
+push 0
+push 1
+push 2
+  push 3
+                   pall    
+push r
     push 5    
       push    6        
 pall

@@ -24,7 +24,6 @@ int main(int argc, char **argv)
 	}
 
     vari.fil = fopen(argv[1], "r");
-
     if (vari.fil == NULL)
     {
         fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
@@ -59,3 +58,5 @@ int main(int argc, char **argv)
     f_list(vari.mystack);
     return(0);
 }
+
+
