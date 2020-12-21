@@ -9,7 +9,7 @@ var_1 vari;
  */
  void f_list(stack_t *mystack)
  {
-     
+
 	stack_t *temp = mystack;
 
 	if (mystack == NULL)
@@ -22,4 +22,3 @@ var_1 vari;
 	}
 	mystack = NULL;
 }
-
