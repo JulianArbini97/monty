@@ -27,7 +27,7 @@ void run(char (*refer)[80])
 		{"mod", module},
 		{NULL, NULL},
 	};
-	for (j = 0; j < 10; j++)
+	for (j = 0; j < 11; j++)
 	{
 		if (strcmp(funcs[j].opcode, refer[0]) == 0)
 		{
@@ -40,7 +40,7 @@ void run(char (*refer)[80])
 			nop(&(vari.mystack),
 			    vari.line_number);
 
-		else if (j == 9)
+		else if (j == 10)
 		{
 			fprintf(stderr, "L%u: unknown instruction %s\n",
 				vari.line_number, refer[0]);
