@@ -21,9 +21,10 @@ void run(char (*refer)[80])
 		{"nop", nop},
 		{"swap", swap},
 		{"add", add},
+		{"sub", sub},
 		{NULL, NULL},
 	};
-	for (j = 0; j < 7; j++)
+	for (j = 0; j < 8; j++)
 	{
 		if (strcmp(funcs[j].opcode, refer[0]) == 0)
 		{
@@ -32,7 +33,7 @@ void run(char (*refer)[80])
 			return;
 		}
 
-		else if (j == 6)
+		else if (j == 7)
 		{
 			fprintf(stderr, "L%u: unknown instruction %s\n",
 				vari.line_number, refer[0]);
