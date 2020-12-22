@@ -53,7 +53,7 @@ void pall(stack_t **stack, unsigned int line_number);
 void push(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
 void hello( __attribute__((unused))stack_t **stack, __attribute__((unused))unsigned int line_number);
-void run(char (*refer)[256]);
+void run(char (*refer)[80]);
 void f_list(stack_t *mystack);
 void nop(stack_t **stack, unsigned int line_number);
 void pop(stack_t **stack, unsigned int line_number);

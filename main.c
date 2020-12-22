@@ -12,9 +12,9 @@ var_1 vari;
  */
 int main(int argc, char **argv)
 {
-    char line[256];
+    char line[80];
     char *token;
-    char refer[2][256];
+    char refer[2][80];
     int i = 0;
 
     if (argc != 2)
@@ -39,8 +39,8 @@ int main(int argc, char **argv)
     {
 
         i = 0;
-        memset(refer[0], 0, 256);
-        memset(refer[1], 0, 256);
+        memset(refer[0], 0, 80);
+        memset(refer[1], 0, 80);
         token = strtok(line, " \n\t");
 
 	if(token)
