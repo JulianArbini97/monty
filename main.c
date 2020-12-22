@@ -12,7 +12,7 @@ var_1 vari;
  */
 int main(int argc, char **argv)
 {
-    char line[250];
+    char line[800];
     char *token;
     char refer[2][80];
     int i = 0;
