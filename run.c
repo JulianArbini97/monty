@@ -9,7 +9,7 @@ var_1 vari;
  * Return: no thing
  */
 
-void run(char (*refer)[100])
+void run(char (*refer)[10000])
 {
      int j = 0;
      unsigned int i = 0;

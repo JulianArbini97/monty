@@ -1,6 +1,17 @@
 push 1
-pall 34r3
-push 5343
-push 21
-push 34r34
 pall
+pall
+push 5343
+
+   push 21
+push 3434
+pall
+
+
+
+
+
+push 1
+
+
+                                     push                                                                                                                                                                                                                                                                      1                                      
