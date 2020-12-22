@@ -41,14 +41,14 @@ int main(int argc, char **argv)
         i = 0;
         memset(refer[0], 0, 80);
         memset(refer[1], 0, 80);
-        token = strtok(line, " \n");
+        token = strtok(line, " \n\t\r");
 
 	if(token)
         {
             while (token != NULL)
             {
                 strcpy(refer[i], token);
-                token = strtok(NULL, " \n");
+                token = strtok(NULL, " \n\t\r");
                 i++;
             }
 	    run(refer);
