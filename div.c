@@ -14,6 +14,14 @@ void division(stack_t **stack, unsigned int line_number)
 		fclose(vari.fil);
 		exit(EXIT_FAILURE);
 	}
+
+	else if ((*stack)->n == 0)
+	{
+		fprintf(stderr, "L%d: division by zero\n", line_number);
+		f_list(*stack);
+		exit(EXIT_FAILURE);
+	}
+
 	else
 	{
 		(*stack)->next->n = (*stack)->n / (*stack)->next->n;
