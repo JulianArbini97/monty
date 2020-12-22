@@ -27,6 +27,8 @@ void run(char (*refer)[100])
          if(strcmp(funcs[j].opcode, refer[0]) == 0)
          {
              vari.num = refer[1];
+	     if (strcmp(funcs[0].opcode, refer[0]) == 0)
+	     {
 	     for (i = 0; i < strlen(vari.num); i++)
 	     {
 		     if (vari.num[i] < 48 || vari.num[i] > 57)
@@ -36,6 +38,7 @@ void run(char (*refer)[100])
 			     f_list(vari.mystack);
 			     exit(EXIT_FAILURE);
 		     }
+	     }
 	     }
              funcs[j].f(&(vari.mystack), vari.line_number);
              return;
