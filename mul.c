@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- * mul - adds the top two elements of the stack.
+ * multi - adds the top two elements of the stack.
  * @stack: head of stack
  * @line_number: current line number in file
  */
-void mul(stack_t **stack, unsigned int line_number)
+void multi(stack_t **stack, unsigned int line_number)
 {
 	if (stack == NULL || (*stack) == NULL || (*stack)->next == NULL)
 	{

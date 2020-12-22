@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- * div - adds the top two elements of the stack.
+ * division - adds the top two elements of the stack.
  * @stack: head of stack
  * @line_number: current line number in file
  */
-void div(stack_t **stack, unsigned int line_number)
+void division(stack_t **stack, unsigned int line_number)
 {
 	if (stack == NULL || (*stack) == NULL || (*stack)->next == NULL)
 	{
