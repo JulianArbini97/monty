@@ -36,6 +36,10 @@ void run(char (*refer)[80])
 			return;
 		}
 
+		else if (refer[0][0] == '#')
+			nop(&(vari.mystack),
+			    vari.line_number);
+
 		else if (j == 9)
 		{
 			fprintf(stderr, "L%u: unknown instruction %s\n",
