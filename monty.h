@@ -69,5 +69,5 @@ void nop(stack_t **stack, unsigned int line_number);
 void pop(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
 int _atoi(char *str);
-
+void add(stack_t **stack, unsigned int line_number);
 #endif
