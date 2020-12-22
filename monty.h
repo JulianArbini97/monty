@@ -19,9 +19,9 @@
  */
 typedef struct stack_s
 {
-        int n;
-        struct stack_s *prev;
-        struct stack_s *next;
+int n;
+struct stack_s *prev;
+struct stack_s *next;
 } stack_t;
 
 /**
@@ -34,17 +34,28 @@ typedef struct stack_s
  */
 typedef struct instruction_s
 {
-        char *opcode;
-        void (*f)(stack_t **stack, unsigned int line_number);
+char *opcode;
+void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
+/**
+ * struct global - opcode and its function
+ * @fil: the opcode
+ * @line_number: function to handle the opcode
+ * @num: number
+ * @queue_ask: a
+ * @mystack: stack
+ * Description: opcode and its function
+ * for stack, queues, LIFO, FIFO Holberton project
+ */
 
 typedef struct global
 {
-	FILE *fil;
-	unsigned int line_number;
-	char *num;
-	int queue_ask;
-	stack_t *mystack;
+FILE *fil;
+unsigned int line_number;
+char *num;
+int queue_ask;
+stack_t *mystack;
 } var_1;
 
 extern var_1 vari;
@@ -52,7 +63,6 @@ extern var_1 vari;
 void pall(stack_t **stack, unsigned int line_number);
 void push(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
-void hello( __attribute__((unused))stack_t **stack, __attribute__((unused))unsigned int line_number);
 void run(char (*refer)[80]);
 void f_list(stack_t *mystack);
 void nop(stack_t **stack, unsigned int line_number);
@@ -60,4 +70,4 @@ void pop(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
 int _atoi(char *str);
 
-#endif 
+#endif

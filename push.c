@@ -1,6 +1,13 @@
 #include "monty.h"
 var_1 vari;
 
+/**
+ * push - function
+ * @stack: stack
+ * @line_number: line number
+ *
+ **/
+
 void push(stack_t **stack, unsigned int line_number)
 {
 	stack_t *new;
@@ -23,14 +30,4 @@ void push(stack_t **stack, unsigned int line_number)
 		if ((*stack) != NULL)
 			(*stack)->prev = new;
 		(*stack) = new;
-/*	else
-	{
-		fprintf(stderr,"L%d: usage: push integer\n", vari.line_number);
-		fclose(vari.fil);
-		f_list(vari.mystack);
-		free(new);
-		exit(EXIT_FAILURE);
-	}
-*/
 }
-

@@ -38,7 +38,8 @@ int _atoi(char *str)
 			check2 = 0;
 		else
 		{
-			fprintf(stderr,"L%d: usage: push integer\n", vari.line_number);
+			fprintf(stderr, "L%d: usage: push integer\n",
+				vari.line_number);
 			fclose(vari.fil);
 			f_list(vari.mystack);
 			exit(EXIT_FAILURE);

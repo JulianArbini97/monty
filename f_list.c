@@ -2,14 +2,13 @@
 var_1 vari;
 
 /**
- * main - runs monty interpreter
- * @argc: argument count
- * @argv: argument vector
+ * f_list - runs monty interpreter
+ * @mystack: argument count
  * Return: return -1 if failed, else 1
  */
- void f_list(stack_t *mystack)
- {
-     
+void f_list(stack_t *mystack)
+{
+
 	stack_t *temp = mystack;
 
 	if (mystack == NULL)
@@ -22,4 +21,3 @@ var_1 vari;
 	}
 	mystack = NULL;
 }
-
