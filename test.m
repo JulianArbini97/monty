@@ -1,21 +1,7 @@
-
-
-push 0
-pall
-
-
-
-
-
-
-
-
-
-
-pall
-pall
-push 2
-
-   push                                                                                                                                                                                       21
-push 3434
+                                                                                                              push 1
+push                                                                               2
+push 3
+push 4
+push 5
+push 6
 pall
