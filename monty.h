@@ -71,4 +71,6 @@ void swap(stack_t **stack, unsigned int line_number);
 int _atoi(char *str);
 void add(stack_t **stack, unsigned int line_number);
 void sub(stack_t **stack, unsigned int line_number);
+void mul(stack_t **stack, unsigned int line_number);
+void div(stack_t **stack, unsigned int line_number);
 #endif
