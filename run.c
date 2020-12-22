@@ -24,6 +24,7 @@ void run(char (*refer)[80])
 		{"sub", sub},
 		{"div", division},
 		{"mul", multi},
+		{"mod", module},
 		{NULL, NULL},
 	};
 	for (j = 0; j < 10; j++)
