@@ -35,14 +35,15 @@ int main(int argc, char **argv)
     vari.queue_ask = 0;
 
 
-    while(fgets(line, sizeof(line), vari.fil))
+    while (fgets(line, sizeof(line), vari.fil))
     {
 
         i = 0;
         memset(refer[0], 0, 100);
         memset(refer[1], 0, 100);
         token = strtok(line, " \n\t");
-        if(token)
+
+	if(token)
         {
             while (token != NULL)
             {
@@ -50,7 +51,7 @@ int main(int argc, char **argv)
                 token = strtok(NULL, " \n\t");
                 i++;
             }
-            run(refer);
+	    run(refer);
         }
         vari.line_number++;
     }

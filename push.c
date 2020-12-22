@@ -20,14 +20,6 @@ void push(stack_t **stack, unsigned int line_number)
     if (*num >= 48 && *num <= 57)
     {
     new->n = atoi(num);
-    if (atoi(num) == 0 && *num != 48)
-    {
-	    fprintf(stderr,"L%d: usage: push integer\n", vari.line_number);
-	    fclose(vari.fil);
-	    f_list(vari.mystack);
-	    free(new);
-	    exit(EXIT_FAILURE);
-    }
     new->next = (*stack);
     new->prev = NULL;
     if ((*stack) != NULL)
