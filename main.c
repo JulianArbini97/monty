@@ -1,6 +1,6 @@
 #include "monty.h"
 
-#define TOKEN_DELIM " \t\n\r"
+#define TOKEN_DELIM " \t\n"
 
 var_1 vari;
 
@@ -41,14 +41,14 @@ int main(int argc, char **argv)
         i = 0;
         memset(refer[0], 0, 80);
         memset(refer[1], 0, 80);
-        token = strtok(line, " \n\t");
+        token = strtok(line, " \n");
 
 	if(token)
         {
             while (token != NULL)
             {
                 strcpy(refer[i], token);
-                token = strtok(NULL, " \n\t");
+                token = strtok(NULL, " \n");
                 i++;
             }
 	    run(refer);
